@@ -82,7 +82,7 @@ stroke(0, 0, 0, 160);
 strokeWeight(4 + 2 / 3);
 translate(550, 300);
 scale(2 / 3);
-rotate(-frameCount);//The speed of the rotation depends on the FrameCount and the rotation is counterclockwise because there is the minus sign
+rotate(-frameCount);//The movement depends on the frameCount and the rotation is counterclockwise because there is the minus sign
 triangle(45, 0, 90, 75, 15, 75);
 pop();
 
