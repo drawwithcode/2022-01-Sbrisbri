@@ -92,7 +92,7 @@ noStroke();
 fill(232, 50, 62, 130);
 translate(550, 300);
 scale(1.5);
-rotate(frameCount);//Is the framecount that enables the movement and the rotation this time is clockwise 
+rotate(frameCount);//The movement depends on the frameCount and the rotation this time is clockwise 
 triangle(45, 0, 90, 75, 15, 75);
 pop();
 
@@ -109,7 +109,7 @@ pop();
 push();
 stroke(0, 0, 0, 160);
 strokeWeight(1);
-line(800, frameCount + 100, 800, frameCount + 250);//Is the framecount that enables the movement
+line(800, frameCount + 100, 800, frameCount + 250);//The movement depends on the frameCount
 line(820, frameCount + 100, 820, frameCount + 250);
 line(840, frameCount + 100, 840, frameCount + 250);
 pop();
