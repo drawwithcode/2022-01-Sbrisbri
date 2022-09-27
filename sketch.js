@@ -100,7 +100,7 @@ pop();
 push();
 stroke(0, 0, 0, 160);
 strokeWeight(1);
-line(frameCount + 500, 320, frameCount  + 650, 320);//Is the framecount that enables the movement
+line(frameCount + 500, 320, frameCount  + 650, 320);//The movement depends on the frameCount
 line(frameCount + 500, 340, frameCount  + 650, 340);
 line(frameCount + 500, 360, frameCount  + 650, 360);
 pop();
