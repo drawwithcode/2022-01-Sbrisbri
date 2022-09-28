@@ -114,14 +114,6 @@ line(820, frameCount + 100, 820, frameCount + 250);
 line(840, frameCount + 100, 840, frameCount + 250);
 pop();
 
-//Draw the circle with the black stroke whose width and height depend on the movement of the mouse 
-push();
-stroke(0, 0, 0, 160);
-strokeWeight(10);
-noFill();
-circle(windowWidth / 2, windowHeight / 2, mouseX, mouseY);//MouseX and mouseY say that the diameter depends on the movement of the mouse
-pop();
-
 //Translation, rotation and then draw two lines (the transformation that is written last is the one that occurs last)
 push();
 stroke(0, 0, 0, 160);
@@ -159,6 +151,14 @@ strokeWeight(1);
 line(500, mouseY, mouseX, 350);
 line(mouseX, windowHeight / 2 - 100, 500, mouseY);
 line(700, mouseY, mouseX, 150);
+pop();
+
+//Draw the circle with the black stroke whose width and height depend on the movement of the mouse 
+push();
+stroke(0, 0, 0, 160);
+strokeWeight(10);
+noFill();
+circle(windowWidth / 2, windowHeight / 2, mouseY, mouseX);//MouseX and mouseY say that the diameter depends on the movement of the mouse. The width of the circle depends on the mouse movement in the y direction and the height of the circle depends on the mouse movement in the x direction
 pop();
 
 //Translation before drawing each circle (three circle in total) and before writing the text. Either the circles and the text disappear when the mouse is clicked thanks to the "if" statement 
